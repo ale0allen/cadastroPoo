@@ -207,15 +207,19 @@ public class MainCadastro {
     private static PessoaFisica lerDadosPessoaFisica(Scanner scanner) {
         System.out.print("Digite o ID: ");
         int id = scanner.nextInt();
+        scanner.nextLine();
 
         System.out.print("Digite o Nome: ");
         String nome = scanner.next();
+        scanner.nextLine();
 
         System.out.print("Digite o CPF: ");
         String cpf = scanner.next();
+        scanner.nextLine();
 
         System.out.print("Digite a Idade: ");
         int idade = scanner.nextInt();
+        scanner.nextLine();
 
         return new PessoaFisica(id, nome, cpf, idade);
     }
@@ -226,9 +230,11 @@ public class MainCadastro {
 
         System.out.print("Digite o Nome: ");
         String nome = scanner.next();
-
+        scanner.nextLine();
+        
         System.out.print("Digite o CNPJ: ");
         String cnpj = scanner.next();
+        scanner.nextLine();
 
         return new PessoaJuridica(id, nome, cnpj);
     }
